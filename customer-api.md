@@ -1,16 +1,16 @@
-**Feedback News - Appearance API**
+**Feedback Org - Appearance API**
 ----
-  _This API enables a logged user to fetch all appearances and get appearance details from feedback.news database._
+  _This API enables a logged user to fetch all appearances and get appearance details from feedback.org database._
 
 * **IDENTIFIER**
-    First you need to ask Feedback News team for a unique token you will add to the header of each API call you make.
+    First you need to ask Feedback Org team for a unique token you will add to the header of each API call you make.
     A token take the form of `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9`
 
 ### Fetch all appearances
 
 * **URL and Method**
 
-  `https://api.feedback.news/appearances`
+  `https://api.feedback.org/appearances`
   Method : `GET`
 
 *  **URL Params**
@@ -49,8 +49,8 @@
 
 * **Url example:**
 
-  Simple call : `https://api.feedback.news/appearances`
-  Call with all parameters : `https://api.feedback.news/appearances?page=1&paginator=100&startDate=2020-01-01&endDate=2020-03-31`
+  Simple call : `https://api.feedback.org/appearances`
+  Call with all parameters : `https://api.feedback.org/appearances?page=1&paginator=100&startDate=2020-01-01&endDate=2020-03-31`
 
 * **Sample Call:**
 
@@ -61,7 +61,7 @@
     import requests
     import json
     headers = {'x-access-tokens': <your-token>}
-    r = requests.get('https://api.feedback.news/appearances', headers=headers)
+    r = requests.get('https://api.feedback.org/appearances', headers=headers)
     ```
 
 
@@ -69,7 +69,7 @@
 
 * **URL and Method**
 
-  `https://api.feedback.news/appearances/<appearance-id>`
+  `https://api.feedback.org/appearances/<appearance-id>`
   Method : `GET`
 
 *  **URL Params**
@@ -118,7 +118,7 @@
 
 * **Url example:**
 
-  Simple call : `https://api.feedback.news/appearances/AM`
+  Simple call : `https://api.feedback.org/appearances/AM`
 
 * **Sample Call:**
 
@@ -129,5 +129,5 @@
     import requests
     import json
     headers = {'x-access-tokens': <your-token>}
-    r = requests.get('https://api.feedback.news/appearances/<appearance-id>', headers=headers)
+    r = requests.get('https://api.feedback.org/appearances/<appearance-id>', headers=headers)
     ```
