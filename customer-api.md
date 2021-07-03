@@ -1,9 +1,9 @@
-**Feedback Org - Appearance API**
+**Feedback - Appearance API**
 ----
-  _This API enables a logged user to fetch all appearances and get appearance details from feedback.org database._
+  _This API enables a logged user to fetch all appearances and get appearance details from feedback database._
 
 * **IDENTIFIER**
-    First you need to ask Feedback Org team for a unique token you will add to the header of each API call you make.
+    First you need to ask Feedback team for a unique token you will add to the header of each API call you make.
     A token take the form of `eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9`
 
 ### Fetch all appearances
